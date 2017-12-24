@@ -4,3 +4,7 @@ closure-library/*
 *~
 _site/*
 .DS_Store
+
+js-compiled.js
+npm-debug.log
+closure_linter.egg-info/

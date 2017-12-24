@@ -32,10 +32,10 @@ export class Box {
 
   /** @return {boolean} */
   contains(position) {
-    return position.x >= this.startX && position.x <= this.endX
-        && position.y >= this.startY && position.y <= this.endY;
+    return position.x >= this.startX && position.x <= this.endX &&
+      position.y >= this.startY && position.y <= this.endY;
   }
-}
+};
 
 /**
  * An individual cell within the diagram and it's current value.
@@ -71,7 +71,7 @@ export class Cell {
   isErase() {
     return this.scratchValue == ERASE_CHAR;
   }
-}
+};
 
 /**
  * The context for a cell, i.e. the status of the cells around it.
@@ -107,10 +107,10 @@ export class CellContext {
    * @return {number}
    */
   extendedSum() {
-    return this.left + this.right + this.up + this.down
-         + this.leftup + this.leftdown + this.rightup + this.rightdown;
+    return this.left + this.right + this.up + this.down +
+      this.leftup + this.leftdown + this.rightup + this.rightdown;
   }
-}
+};
 
 /**
  * A pair of a vector and a string value. Used in history management.
